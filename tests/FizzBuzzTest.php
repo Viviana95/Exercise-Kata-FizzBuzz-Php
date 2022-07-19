@@ -32,6 +32,18 @@ $this->assertEquals("FizzBuzz",$result);
         $result = $fizzBuzz -> isDivisible($numb);
 $this->assertEquals($numb,$result);
     }
+    public function test_is_divisible_by_3_and_have_return_Fizz()
+    {
+        $fizzBuzz = new FizzBuzz; //given
+        $result = $fizzBuzz -> isDivisible(534);
+$this->assertEquals("Fizz",$result);
+    } 
+    public function test_is_divisible_by_5_and_have_return_Buzz()
+    {
+        $fizzBuzz = new FizzBuzz; //given
+        $result = $fizzBuzz -> isDivisible(25);
+$this->assertEquals("Buzz",$result);
+    }    
 }
 
 
